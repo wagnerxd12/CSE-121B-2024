@@ -1,5 +1,5 @@
 // Addition
-document.getElementById("addNumbers").addEventListener("click", function() {
+document.getElementById("add_numbers").addEventListener("click", function() {
     var add1 = parseFloat(document.getElementById("add1").value);
     var add2 = parseFloat(document.getElementById("add2").value);
     var sum = add1 + add2;
@@ -7,7 +7,7 @@ document.getElementById("addNumbers").addEventListener("click", function() {
 });
 
 // Subtraction
-document.getElementById("subtractNumbers").addEventListener("click", function() {
+document.getElementById("subtract_numbers").addEventListener("click", function() {
     var subtract1 = parseFloat(document.getElementById("subtract1").value);
     var subtract2 = parseFloat(document.getElementById("subtract2").value);
     var difference = subtract1 - subtract2;
@@ -15,7 +15,7 @@ document.getElementById("subtractNumbers").addEventListener("click", function() 
 });
 
 // Multiplication
-document.getElementById("multiplyNumbers").addEventListener("click", function() {
+document.getElementById("multiply_numbers").addEventListener("click", function() {
     var factor1 = parseFloat(document.getElementById("factor1").value);
     var factor2 = parseFloat(document.getElementById("factor2").value);
     var product = factor1 * factor2;
@@ -23,7 +23,7 @@ document.getElementById("multiplyNumbers").addEventListener("click", function() 
 });
 
 // Division
-document.getElementById("divideNumbers").addEventListener("click", function() {
+document.getElementById("divide_numbers").addEventListener("click", function() {
     var dividend = parseFloat(document.getElementById("dividend").value);
     var divisor = parseFloat(document.getElementById("divisor").value);
     var quotient = dividend / divisor;
@@ -31,9 +31,9 @@ document.getElementById("divideNumbers").addEventListener("click", function() {
 });
 
 // Get Total Due
-document.getElementById("getTotal").addEventListener("click", function() {
+document.getElementById("get_total").addEventListener("click", function() {
     var subtotal = parseFloat(document.getElementById("subtotal").value);
-    var memberDiscount = document.getElementById("member").checked ? 0.9 : 1; // Apply 10% discount for members
+    var memberDiscount = document.getElementById("member_status").checked ? 0.9 : 1; // Apply 10% discount for members
     var total = subtotal * memberDiscount;
     document.getElementById("total").textContent = "$ " + total.toFixed(2);
 });
@@ -63,5 +63,6 @@ var sumOfMultipliedArray = sourceArray.map(function(num) {
     return acc + val;
 }, 0);
 document.getElementById("sumOfMultiplied").textContent = sumOfMultipliedArray;
+
 
 
