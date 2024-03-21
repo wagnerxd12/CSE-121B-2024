@@ -45,6 +45,7 @@ profile.placesLived.forEach(place => {
 // Set year in footer
 document.getElementById("year").innerText = new Date().getFullYear();
 
+
   
 
 
